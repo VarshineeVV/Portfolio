@@ -1,0 +1,198 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* Navbar */
+
+header{
+  background:#111827;
+  padding:20px 10%;
+  position:sticky;
+  top:0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#38bdf8;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:60px;
+  padding:50px 10%;
+}
+
+.hero-text h1{
+  font-size:55px;
+}
+
+.hero-text span{
+  color:#38bdf8;
+}
+
+.hero-text p{
+  margin:20px 0;
+  font-size:20px;
+}
+
+.hero-text button{
+  padding:12px 25px;
+  border:none;
+  background:#38bdf8;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.hero-image img{
+  width:300px;
+}
+
+/* Sections */
+
+.section{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.section h2{
+  font-size:40px;
+  margin-bottom:30px;
+  color:#38bdf8;
+}
+
+/* Skills */
+
+.skills-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.skill-card{
+  background:#1e293b;
+  padding:20px 40px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-5px);
+  background:#38bdf8;
+}
+
+/* Projects */
+
+.project-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+}
+
+.project-card{
+  width:300px;
+  background:#1e293b;
+  padding:25px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:scale(1.05);
+}
+
+/* Contact */
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  width:400px;
+  margin:auto;
+}
+
+input, textarea{
+  padding:15px;
+  border:none;
+  border-radius:8px;
+}
+
+textarea{
+  height:120px;
+}
+
+form button{
+  padding:15px;
+  background:#38bdf8;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:40px;
+  }
+
+  form{
+    width:100%;
+  }
+
+  .nav-links{
+    display:none;
+  }
+}
